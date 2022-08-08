@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/c1c02b3758.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="search col-6">
+              <form id="search">
+                <input
+                  type="text"
+                  placeholder="Hi! Type your city!"
+                  id="looking-city"
+                />
+              </form>
+              <button id="localitation" class="geolocalitation">
+                <i class="fa-solid fa-location-dot"></i>
+                Current
+              </button>
+            </div>
+
+            <div class="space col"></div>
+
+            <div class="current-city col-4">
+              <p class="city">
+                <span id="city"> ... </span>
+                <i class="fa-solid fa-mountain-city"></i>
+              </p>
+              <div class="degrees" id="defineDegrees">
+                What do you prefer?:
+                <i class="fa-solid fa-c" id="celsius"></i> |
+                <i class="fa-solid fa-f" id="fahrenheit"></i>
+                <hr />
+              </div>
+            </div>
+          </div>
+
+          <div class="main row mt-5">
+            <div class="forecast-all-days col-4">
+              <div class="forecast">
+                <p>mon</p>
+                <hr />
+                <br />
+
+                <i class="fa-solid fa-sun"></i>
+                <p>25º - 15º</p>
+              </div>
+              <div class="forecast">
+                <p>tues</p>
+                <hr />
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <p>25º - 15º</p>
+              </div>
+              <div class="forecast">
+                <p>wed</p>
+                <hr />
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <p>25º - 15º</p>
+              </div>
+              <div class="forecast">
+                <p>thue</p>
+                <hr />
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <p>25º - 15º</p>
+              </div>
+              <div class="forecast">
+                <p>fri</p>
+                <hr />
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <p>25º - 15º</p>
+              </div>
+            </div>
+
+            <div class="current-weather col-8">
+              <h1 id="value-degrees"></h1>
+
+              <h1 id="message">Uhm, It's...</h1>
+              <p>
+                <i class="fa-solid fa-calendar-day"></i>
+                <span id="currentTime"> </span>
+              </p>
+              <hr />
+              <p>
+                <i class="fa-solid fa-wind"></i> Wind : 6km/h -
+                <i class="fa-solid fa-cloud-rain"></i> Precipitation : 16%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
