@@ -34,7 +34,7 @@ function searchCity(event) {
       currentDegree.innerHTML = `${temperature}°`;
       let message = document.querySelector("#message");
       if (temperature > 20) {
-        message.innerHTML = `Walking day!`;
+        message.innerHTML = `Walking day`;
       } else if (temperature < 5) {
         message.innerHTML = `It is cold!`;
       } else {
@@ -91,9 +91,7 @@ function position(event) {
 
 let form = document.querySelector("#search");
 form.addEventListener("submit", searchCity);
-let localitation = document
-  .getElementById("localitation")
-  .addEventListener("click", position);
+document.getElementById("localitation").addEventListener("click", position);
 
 // function changeToCelsius(event) {
 //   event.preventDefault();

@@ -1,15 +1,3 @@
-.card {
-  margin: 0 auto;
-  width: 70%;
-  padding: 10px;
-  margin-top: 50px;
-  font-family: "Roboto", sans-serif;
-  background-color: #cfd5dc !important;
-  background-image: url(../images/sun.png);
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  background-size: vh;
-}
 i {
   height: 14px;
 }
@@ -32,6 +20,18 @@ input:focus-visible {
   outline-color: #cfd5dc;
 }
 
+.card {
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: #cfd5dc !important;
+  background-image: url(../images/sun.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: vh;
+}
 .geolocalitation {
   text-align: right;
   margin: 0;
@@ -54,6 +54,11 @@ input:focus-visible {
   border-radius: 14px;
 }
 
+.forecast-all-days {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
 .forecast {
   display: inline-block;
   text-align: center;
@@ -105,4 +110,8 @@ input:focus-visible {
 
 .degrees :hover {
   cursor: pointer;
+}
+.sourceCode {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
 }
