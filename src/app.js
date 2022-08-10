@@ -62,7 +62,7 @@ function position(event) {
     let apiKey = "d9fa039441ee765f866a01bc611a5d61";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showtemperature);
-    let reverseApiUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${apiKey}&limit=5`;
+    let reverseApiUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${apiKey}&limit=5`;
     axios.get(reverseApiUrl).then(showCityName);
 
     function showtemperature(response) {
